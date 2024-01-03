@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxev77pg50keo"]
+
+[ext_resource type="Theme" uid="uid://c7m5gucqu4tf7" path="res://assets/settings/theme.tres" id="1_3ueuu"]
+[ext_resource type="Script" path="res://assets/scripts/gui.gd" id="1_nn6rp"]
+
+[node name="Gui" type="CanvasLayer"]
+script = ExtResource("1_nn6rp")
+
+[node name="Scoreboard" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_3ueuu")
+
+[node name="MarginContainer" type="MarginContainer" parent="Scoreboard"]
+layout_mode = 0
+offset_right = 272.0
+offset_bottom = 159.0
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="Score" type="Label" parent="Scoreboard/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 8
+text = "Score: 0"
+horizontal_alignment = 1
+
+[node name="Credits" type="Label" parent="Scoreboard/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 7
+text = "Credits: 1"
+
+[node name="Level" type="Label" parent="Scoreboard/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 7
+text = "Level 1: easy"
+
+[node name="InsertCoin" type="Label" parent="Scoreboard/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 7
+text = "Insert Coin"

@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://chdroy3oatnb7"]
+
+[ext_resource type="Theme" uid="uid://c7m5gucqu4tf7" path="res://assets/settings/theme.tres" id="1_xj1je"]
+[ext_resource type="Script" path="res://assets/scripts/menu.gd" id="2_xm73x"]
+[ext_resource type="Texture2D" uid="uid://djot3wtdg8thm" path="res://assets/images/bg-back.png" id="3_iyx7i"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_xj1je")
+script = ExtResource("2_xm73x")
+
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 273.0
+offset_bottom = 158.0
+texture = ExtResource("3_iyx7i")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 272.0
+offset_bottom = 158.0
+
+[node name="Main" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="VBoxContainer" parent="MarginContainer/Main"]
+layout_mode = 2
+
+[node name="Title_1" type="Label" parent="MarginContainer/Main/Title"]
+layout_mode = 2
+text = "LEDEO SPACE"
+horizontal_alignment = 1
+
+[node name="Title_2" type="Label" parent="MarginContainer/Main/Title"]
+layout_mode = 2
+text = "SHOOTER 2D"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer/Main"]
+layout_mode = 2
+alignment = 1
+
+[node name="Start" type="Button" parent="MarginContainer/Main/Buttons"]
+layout_mode = 2
+text = "INICIAR"
+
+[node name="Exit" type="Button" parent="MarginContainer/Main/Buttons"]
+layout_mode = 2
+text = "SALIR"
+
+[node name="Copyright" type="Label" parent="MarginContainer/Main"]
+layout_mode = 2
+text = "My copyright"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/Main/Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/Main/Buttons/Exit" to="." method="_on_exit_pressed"]

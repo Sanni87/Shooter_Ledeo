@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b0dn4jmatxi3g"
+path="res://.godot/imported/space-asteroids.mp3-aed2a73289967926004f070044be660a.mp3str"
+
+[deps]
+
+source_file="res://Space Shooter files/Space Shooter files/music/exports/space-asteroids.mp3"
+dest_files=["res://.godot/imported/space-asteroids.mp3-aed2a73289967926004f070044be660a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

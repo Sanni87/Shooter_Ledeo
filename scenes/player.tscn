@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://be6d0akxsjssn"]
+
+[ext_resource type="Script" path="res://assets/scripts/player.gd" id="1_6fmq7"]
+[ext_resource type="Texture2D" uid="uid://byos8n35j734o" path="res://assets/images/player2.png" id="2_u7t8h"]
+[ext_resource type="PackedScene" uid="uid://d2ybkp7200eku" path="res://scenes/shot.tscn" id="2_xahwo"]
+[ext_resource type="Texture2D" uid="uid://ctk7gqdanu2cf" path="res://assets/images/player1.png" id="3_qpanb"]
+[ext_resource type="Texture2D" uid="uid://bwj5saay0ilfd" path="res://assets/images/player3.png" id="4_i26oh"]
+[ext_resource type="Texture2D" uid="uid://c7rxbva078o5" path="res://assets/images/flash.png" id="5_5l1gy"]
+[ext_resource type="AudioStream" uid="uid://cafqo62ux5xn4" path="res://assets/audio/shot 1.wav" id="6_uxllq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lx6u6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_u7t8h")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qpanb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_i26oh")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrhwd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_5l1gy")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"flash",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqtna"]
+size = Vector2(25, 11)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_6fmq7")
+shot = ExtResource("2_xahwo")
+
+[node name="Spaceship" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lx6u6")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Flash" type="AnimatedSprite2D" parent="."]
+position = Vector2(18.5, 0)
+sprite_frames = SubResource("SpriteFrames_hrhwd")
+animation = &"flash"
+frame = 1
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_eqtna")
+
+[node name="Settings" type="Node2D" parent="."]
+
+[node name="ShootSpawn" type="Marker2D" parent="Settings"]
+position = Vector2(13, 0)
+gizmo_extents = 0.0
+
+[node name="AudioShot" type="AudioStreamPlayer" parent="Settings"]
+stream = ExtResource("6_uxllq")
+volume_db = -30.0

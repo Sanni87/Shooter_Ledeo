@@ -1,0 +1,126 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1704302446
+icon.svg::CompressedTexture2D::5564168666842703776::1704193647::1704193654::1::::<><>::
+::res://assets/::1704194209
+::res://assets/audio/::1704309984
+explosion.wav::AudioStreamWAV::3193299839609951810::1603158431::1704308055::1::::<><>::
+hit.wav::AudioStreamWAV::1658832037110838500::1603158758::1704308055::1::::<><>::
+shot 1.wav::AudioStreamWAV::4784161400029657043::1603158066::1704201070::1::::<><>::
+shot 2.wav::AudioStreamWAV::2211018885860563163::1603158061::1704308055::1::::<><>::
+space-asteroids.ogg::AudioStreamOggVorbis::8513287824906657714::1704197593::1704309984::1::::<><>::
+::res://assets/images/::1704307938
+bg-back.png::CompressedTexture2D::7821067742480961998::1704198036::1704198037::1::::<><>::
+bg-planet.png::CompressedTexture2D::6533535634485128649::1704198326::1704198327::1::::<><>::
+bg-stars.png::CompressedTexture2D::4358884706176805678::1704198173::1704198174::1::::<><>::
+enemy1.png::CompressedTexture2D::4658695345626084808::1602719987::1704307353::1::::<><>::
+enemy2.png::CompressedTexture2D::6202491918252481200::1602719987::1704307353::1::::<><>::
+enemy3.png::CompressedTexture2D::4869215360452570627::1602719987::1704307353::1::::<><>::
+enemy4.png::CompressedTexture2D::3886918013695449963::1602719987::1704307353::1::::<><>::
+enemy5.png::CompressedTexture2D::6019650290700562184::1602719987::1704307353::1::::<><>::
+explosion1.png::CompressedTexture2D::688668315979614559::1602807516::1704307938::1::::<><>::
+explosion2.png::CompressedTexture2D::30238684995091437::1602807516::1704307938::1::::<><>::
+explosion3.png::CompressedTexture2D::2446728489398361231::1602807516::1704307938::1::::<><>::
+explosion4.png::CompressedTexture2D::1044098086585426503::1602807516::1704307938::1::::<><>::
+explosion5.png::CompressedTexture2D::5676263353221950545::1602807516::1704307938::1::::<><>::
+flash.png::CompressedTexture2D::207511122541767758::1602805187::1704200569::1::::<><>::
+player1.png::CompressedTexture2D::6129027677607576677::1704199956::1704199957::1::::<><>::
+player2.png::CompressedTexture2D::4101006784065829416::1704199956::1704199957::1::::<><>::
+player3.png::CompressedTexture2D::3951008298713819433::1704199956::1704199957::1::::<><>::
+shoot1.png::CompressedTexture2D::5138853467271195038::1602804911::1704305451::1::::<><>::
+shoot2.png::CompressedTexture2D::3895069936043365655::1602804911::1704305451::1::::<><>::
+::res://assets/scripts/::1704311686
+global.gd::GDScript::-1::1704306848::0::1::::<>Node<>::
+level.gd::GDScript::-1::1704302696::0::1::::<>Node2D<>::
+menu.gd::GDScript::-1::1704199653::0::1::::<>Control<>::
+player.gd::GDScript::-1::1704307077::0::1::::Player<>CharacterBody2D<>::
+enemy.gd::GDScript::-1::1704308701::0::1::::<>Node2D<>::
+game_over.gd::GDScript::-1::1704309667::0::1::::<>Control<>::
+gui.gd::GDScript::-1::1704311686::0::1::::<>CanvasLayer<>::
+shot.gd::GDScript::-1::1704306499::0::1::::<>Area2D<>::
+::res://assets/settings/::1704310631
+theme.tres::Theme::7045490175709846206::1704310631::0::1::::<><>::
+::res://scenes/::1704311686
+enemy.tscn::PackedScene::9017409378477374118::1704309016::0::1::::<><>::res://assets/scripts/enemy.gd<>uid://b7mybcv46hhe3::::res://assets/images/enemy1.png<>uid://cumseu4qnvck3::::res://assets/images/enemy2.png<>uid://cbmxjbatkv4sd::::res://assets/images/enemy3.png<>uid://bvm38bnu8al8n::::res://assets/images/enemy4.png<>uid://cr0704qyl0hoy::::res://assets/images/enemy5.png<>uid://j2ujceolnj0r::::res://assets/images/explosion1.png<>uid://owa55mfvuiv::::res://assets/images/explosion2.png<>uid://ba4hi4oqee66v::::res://assets/images/explosion3.png<>uid://o41e4if1euih::::res://assets/images/explosion4.png<>uid://cm4vh0x3o1qe0::::res://assets/images/explosion5.png<>uid://blq4ggf6foype::::res://assets/audio/explosion.wav
+game_over.tscn::PackedScene::243918410023686253::1704311600::0::1::::<><>::uid://c7m5gucqu4tf7::::res://assets/settings/theme.tres<>res://assets/scripts/game_over.gd
+gui.tscn::PackedScene::6396776188563206246::1704311686::0::1::::<><>::uid://c7m5gucqu4tf7::::res://assets/settings/theme.tres<>res://assets/scripts/gui.gd
+level.tscn::PackedScene::8478294048151724709::1704311600::0::1::::<><>::uid://cxev77pg50keo::::res://scenes/gui.tscn<>res://assets/scripts/level.gd<>uid://dtj5uvksawit3::::res://assets/audio/space-asteroids.ogg<>uid://d1qdod0kfc0ko::::res://scenes/enemy.tscn<>uid://djot3wtdg8thm::::res://assets/images/bg-back.png<>uid://b3dqguttuqi6q::::res://assets/images/bg-stars.png<>uid://c0c5m3g58i73b::::res://assets/images/bg-planet.png<>uid://be6d0akxsjssn::::res://scenes/player.tscn
+menu.tscn::PackedScene::5271414900558091470::1704311600::0::1::::<><>::uid://c7m5gucqu4tf7::::res://assets/settings/theme.tres<>res://assets/scripts/menu.gd<>uid://djot3wtdg8thm::::res://assets/images/bg-back.png
+player.tscn::PackedScene::2731398580964493569::1704311600::0::1::::<><>::res://assets/scripts/player.gd<>uid://byos8n35j734o::::res://assets/images/player2.png<>uid://d2ybkp7200eku::::res://scenes/shot.tscn<>uid://ctk7gqdanu2cf::::res://assets/images/player1.png<>uid://bwj5saay0ilfd::::res://assets/images/player3.png<>uid://c7rxbva078o5::::res://assets/images/flash.png<>uid://cafqo62ux5xn4::::res://assets/audio/shot 1.wav
+shot.tscn::PackedScene::9103985308880573488::1704309016::0::1::::<><>::res://assets/scripts/shot.gd<>uid://cfhkfvw871q8m::::res://assets/images/shoot1.png<>uid://bvq2h6c1wktr0::::res://assets/images/shoot2.png
+::res://Space Shooter files/::1704196548
+::res://Space Shooter files/Space Shooter files/::1603203350
+public-license.txt::TextFile::-1::1593557378::0::1::::<><>::
+::res://Space Shooter files/Space Shooter files/asteroids/::1704196573
+asteroid-small.png::CompressedTexture2D::7875592553160558528::1602968587::1704196573::1::::<><>::
+asteroid.png::CompressedTexture2D::1708296074179252243::1602968564::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/background/::1704196573
+bg-preview-big.png::CompressedTexture2D::8295925985001035365::1602532073::1704196573::1::::<><>::
+bg-preview.png::CompressedTexture2D::4173245492655769523::1602532066::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/background/layered/::1704196573
+bg-back.png::CompressedTexture2D::8536080332243338587::1602532097::1704196573::1::::<><>::
+bg-planet.png::CompressedTexture2D::7367962235926553325::1602532114::1704196573::1::::<><>::
+bg-stars.png::CompressedTexture2D::14327721690136738::1602532104::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/enemy/::1602803468
+::res://Space Shooter files/Space Shooter files/enemy/sprites/::1704196573
+enemy1.png::CompressedTexture2D::9187867629754006844::1602719987::1704196573::1::::<><>::
+enemy2.png::CompressedTexture2D::2520345342170023838::1602719987::1704196573::1::::<><>::
+enemy3.png::CompressedTexture2D::185257250135812591::1602719987::1704196573::1::::<><>::
+enemy4.png::CompressedTexture2D::3160455189484386047::1602719987::1704196573::1::::<><>::
+enemy5.png::CompressedTexture2D::3904445401126150590::1602719987::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/explosion/::1704196573
+explosion.png::CompressedTexture2D::3483268019002699695::1602806737::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/explosion/sprites/::1704196573
+explosion1.png::CompressedTexture2D::6555557372248694757::1602807516::1704196573::1::::<><>::
+explosion2.png::CompressedTexture2D::7118610438596468915::1602807516::1704196573::1::::<><>::
+explosion3.png::CompressedTexture2D::8964579524291908080::1602807516::1704196573::1::::<><>::
+explosion4.png::CompressedTexture2D::6182737827402157168::1602807516::1704196573::1::::<><>::
+explosion5.png::CompressedTexture2D::4907436002837526430::1602807516::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/flash/::1704196573
+flash.png::CompressedTexture2D::4973411006723073294::1602805187::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/Hit/::1704196573
+hit.png::CompressedTexture2D::8294513568046490874::1602622169::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/Hit/sprites/::1704196573
+hit1.png::CompressedTexture2D::591034410012173160::1602622251::1704196573::1::::<><>::
+hit2.png::CompressedTexture2D::586603045195278176::1602622251::1704196573::1::::<><>::
+hit3.png::CompressedTexture2D::1042793490861229524::1602622251::1704196573::1::::<><>::
+hit4.png::CompressedTexture2D::7567068628304103488::1602622251::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/music/::1603158479
+::res://Space Shooter files/Space Shooter files/music/exports/::1704197679
+space-asteroids.mp3::AudioStreamMP3::4148176508109404870::1603048264::1704196573::1::::<><>::
+space-asteroids.ogg::AudioStreamOggVorbis::1584286850589003485::1603048264::1704197679::1::::<><>::
+space-asteroids.wav::AudioStreamWAV::1609893389676833024::1603048264::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/player/::1603203345
+::res://Space Shooter files/Space Shooter files/player/sprites/::1704196573
+player1.png::CompressedTexture2D::7595377729391108118::1602806201::1704196573::1::::<><>::
+player2.png::CompressedTexture2D::3887952615137424027::1602806201::1704196573::1::::<><>::
+player3.png::CompressedTexture2D::1628345618287060865::1602806201::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/shoot/::1704196573
+shoot1.png::CompressedTexture2D::8040154886931636215::1602804911::1704196573::1::::<><>::
+shoot2.png::CompressedTexture2D::5877563827258505448::1602804911::1704196573::1::::<><>::
+::res://Space Shooter files/Space Shooter files/Sound FX/::1704196573
+explosion.wav::AudioStreamWAV::2916320830708919082::1603158431::1704196573::1::::<><>::
+hit.wav::AudioStreamWAV::7665055925371027787::1603158758::1704196573::1::::<><>::
+shot 1.wav::AudioStreamWAV::7116372711575154479::1603158066::1704196573::1::::<><>::
+shot 2.wav::AudioStreamWAV::6883081349995071461::1603158061::1704196573::1::::<><>::
+::res://Space Shooter files/__MACOSX/::1603204320
+::res://Space Shooter files/__MACOSX/Space Shooter files/::1603204320
+._public-license.txt::TextFile::-1::1593557378::0::1::::<><>::
+::res://Space Shooter files/__MACOSX/Space Shooter files/background/::1603204320
+::res://Space Shooter files/__MACOSX/Space Shooter files/enemy/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/explosion/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/flash/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/Hit/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/music/::1603204320
+::res://Space Shooter files/__MACOSX/Space Shooter files/music/exports/::1603204320
+._space-asteroids.mp3::::-1::0::0::0::::<><>::
+._space-asteroids.ogg::::-1::0::0::0::::<><>::
+._space-asteroids.wav::::-1::0::0::0::::<><>::
+::res://Space Shooter files/__MACOSX/Space Shooter files/player/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/player/sprites/::1603204321
+._player2.png::::-1::0::0::0::::<><>::
+::res://Space Shooter files/__MACOSX/Space Shooter files/shoot/::1603204321
+::res://Space Shooter files/__MACOSX/Space Shooter files/Sound FX/::1603204321
+._explosion.wav::::-1::0::0::0::::<><>::
+._hit.wav::::-1::0::0::0::::<><>::
+._shot 1.wav::::-1::0::0::0::::<><>::
+._shot 2.wav::::-1::0::0::0::::<><>::

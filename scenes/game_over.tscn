@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqfkhp30qelx"]
+
+[ext_resource type="Theme" uid="uid://c7m5gucqu4tf7" path="res://assets/settings/theme.tres" id="1_uhadb"]
+[ext_resource type="Script" path="res://assets/scripts/game_over.gd" id="2_nxexl"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_uhadb")
+script = ExtResource("2_nxexl")
+
+[node name="BG" type="ColorRect" parent="."]
+offset_right = 272.0
+offset_bottom = 160.0
+color = Color(0.0470588, 0.0470588, 0.0470588, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 271.0
+offset_bottom = 160.0
+
+[node name="Main" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="VBoxContainer" parent="MarginContainer/Main"]
+layout_mode = 2
+alignment = 1
+
+[node name="GameOver" type="Label" parent="MarginContainer/Main/Title"]
+layout_mode = 2
+text = "Juego terminado"
+horizontal_alignment = 1
+
+[node name="Message" type="Label" parent="MarginContainer/Main/Title"]
+layout_mode = 2
+text = "Puedes volver a intentarlo"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer/Main"]
+layout_mode = 2
+alignment = 1
+
+[node name="Restart" type="Button" parent="MarginContainer/Main/Buttons"]
+layout_mode = 2
+text = "Reiniciar"
+
+[node name="Exit" type="Button" parent="MarginContainer/Main/Buttons"]
+layout_mode = 2
+text = "Salir"
+
+[connection signal="pressed" from="MarginContainer/Main/Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MarginContainer/Main/Buttons/Exit" to="." method="_on_exit_pressed"]
