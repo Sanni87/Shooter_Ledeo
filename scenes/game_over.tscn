@@ -10,11 +10,13 @@ theme = ExtResource("1_uhadb")
 script = ExtResource("2_nxexl")
 
 [node name="BG" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 272.0
 offset_bottom = 160.0
 color = Color(0.0470588, 0.0470588, 0.0470588, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_right = 271.0
 offset_bottom = 160.0
 
